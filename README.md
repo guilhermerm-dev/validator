@@ -22,10 +22,10 @@ Se você gostou deste projeto ou se o Validator te ajudou, por favor, dê uma es
 - Você pode realizar o download das ultimas versões de ferramentas e SDK através do site https://dot.net/core.
 
 Comandos .NET CLI que podem ser executados no diretório do projeto:
-- **Limpar projetos**: ´´´dotnet clean´´´
-- **Restaurar pacotes Nuget**: ´´´dotnet clean´´´
-- **Buildar projetos**: ´´´dotnet build´´´
-- **Executar Testes Unitarios e de Integração**: ´´´dotnet test´´´
+- **Limpar projetos**: ```dotnet clean```
+- **Restaurar pacotes Nuget**: ```dotnet clean```
+- **Buildar projetos**: ```dotnet build```
+- **Executar Testes Unitarios e de Integração**: ```dotnet test```
 
 Você também pode executar este projeto em qualquer SO, sendo ele Windows, Linux ou MacOs.
 
