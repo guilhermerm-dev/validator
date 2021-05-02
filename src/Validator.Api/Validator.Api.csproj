@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Validator.Domain\Validator.Domain.csproj" />
+    <ProjectReference Include="..\Validator.Shared\Validator.Shared.csproj" />
+    <ProjectReference Include="..\Validator.IoC\Validator.IoC.csproj" />
+  </ItemGroup>
+
+</Project>
