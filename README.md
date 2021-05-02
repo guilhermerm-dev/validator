@@ -16,7 +16,9 @@ A senha deve ser uma string e possuir as seguintes caracteristicas:
 
 #### Raciocinio
 Para que fosse possível realizar a validação da senha, construi uma Regular Expression (REGEX) que valida os padrões mencionadas acima, porém houve um problema:
-A Regex que construi identifica apenas caracteres duplicados que são consecutivos, então como solução realizei a ordenação e apliquei a regex para realizar a validação dos padrões e deu certo \o/
+A Regex que construi identifica apenas caracteres duplicados que são consecutivos.
+
+O que fazer para resolver este problema? Realizei a ordenação para que os caracteres que fossem duplicados ficassem em sequencia e assim a REGEX que construi conseguiria validar os padrões da senha. Deu certo!! \o/
 
 ## Dê uma estrela :star:
 Se você gostou deste projeto ou se o Validator te ajudou, por favor, dê uma estrela ;)
