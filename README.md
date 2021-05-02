@@ -2,7 +2,7 @@ O que é o Validator?
 =====================
 O Validator é um projeto open-source escrito em .NET core
 
-O objetivo da implementação deste projeto a princípio é a validação de uma senha, mas pode se estender a outras validaçãos como por exemplo CPF, CNPJ e Etc. 
+O objetivo da implementação deste projeto a princípio, é a validação de uma senha, mas pode se estender a outras validaçãos no futuro como por exemplo CPF, CNPJ e Etc. 
 
 A senha deve ser uma string e possuir as seguintes caracteristicas:
 
@@ -15,8 +15,8 @@ A senha deve ser uma string e possuir as seguintes caracteristicas:
 - Não possuir caracteres repetidos dentro do conjunto
 
 #### Raciocinio
-Para que fosse possível realizar a validação da senha, construi uma Regular Expression (REGEX) que valida os padrões mencionadas acima, porém houve um problema:
-A Regex que construi identifica apenas caracteres duplicados que são consecutivos.
+Para que fosse possível realizar a validação da senha, construi uma Regular Expression (REGEX) que valida os padrões mencionados acima, porém houve um problema:
+A Regex que construi identifica apenas caracteres duplicados que são consecutivos (AA).
 
 O que fazer para resolver este problema? Realizei a ordenação para que os caracteres que fossem duplicados ficassem em sequencia e assim a REGEX que construi conseguiria validar os padrões da senha. Deu certo!! \o/
 
@@ -38,9 +38,9 @@ Comandos .NET CLI que podem ser executados no diretório do projeto:
 Para levantar o localhost no projeto Validator.Api, é neccessário entrar no diretorio onde o projeto esteja e executar o comando:
 - **Executar Projeto**: ```dotnet run```
 
-O projeto possui documentação do Swagger, para acessar é necessário acessar o endereço ```/swagger``` 
+O projeto possui documentação do Swagger, para acessar é necessário acrescentar o endereço ```/swagger``` ao final da Uri que é disponibilizada pela aplicação 
 
-A aplicação possui um end-point no controller **Validator**, método POST para o endereço ```/Api/Validator/Password/Validate```
+A aplicação possui um end-point no controller **Validator**, verbo HTTP POST para o endereço ```/Api/Validator/Password/Validate```
 
 Você também pode executar este projeto em qualquer SO, sendo ele Windows, Linux ou MacOs.
 
@@ -52,6 +52,8 @@ Para saber mais sobre como realizar o setup do ambiente .NET visite [Microsoft .
 - ASP.NET WebApi Core
 - .NET Core Native DI
 - Swagger UI
+- MStest
+- XUnit
 
 ## Arquitetura:
 - Toda arquitetura baseada em separação de responsabilidade, SOLID e Clean Code
