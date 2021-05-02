@@ -28,7 +28,13 @@ Para saber mais sobre como realizar o setup do ambiente .NET visite [Microsoft .
 ## Tecnologias implementadas:
 
 - ASP.NET 5.0 (with .NET Core 5.0)
- - ASP.NET MVC Core 
- - ASP.NET WebApi Core
+- ASP.NET MVC Core 
+- ASP.NET WebApi Core
 - .NET Core Native DI
 - Swagger UI
+
+## Arquitetura:
+
+- Toda arquitetura baseada em separação de responsabilidade, SOLID e Clean Code
+- Domain Driven Design (Layers)
+- CQRS (Commands)
