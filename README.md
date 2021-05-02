@@ -9,7 +9,7 @@ O objetivo da implementação deste projeto a princípio é a validação de uma
 - Ao menos 1 letra minúscula
 - Ao menos 1 letra maiúscula
 - Ao menos 1 caractere especial
-- Considerar como especial os seguintes caracteres: !@#$%^&*()-+
+- Seguintes caracteres especiais: !@#$%^&*()-+
 - Não possuir caracteres repetidos dentro do conjunto
 
 ## Dê uma estrela :star:
@@ -31,5 +31,4 @@ Para saber mais sobre como realizar o setup do ambiente .NET visite [Microsoft .
  - ASP.NET MVC Core 
  - ASP.NET WebApi Core
 - .NET Core Native DI
-- AutoMapper
 - Swagger UI
