@@ -23,7 +23,7 @@ Se você gostou deste projeto ou se o Validator te ajudou, por favor, dê uma es
 
 Comandos .NET CLI que podem ser executados no diretório do projeto:
 - **Limpar projetos**: ```dotnet clean```
-- **Restaurar pacotes Nuget**: ```dotnet clean```
+- **Restaurar pacotes Nuget**: ```dotnet restore```
 - **Buildar projetos**: ```dotnet build```
 - **Executar Testes Unitarios e de Integração**: ```dotnet test```
 
