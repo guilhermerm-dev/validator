@@ -19,7 +19,6 @@ namespace Validator.Api
         }
 
         [HttpPost("Password/Validate")]
-        [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Post))]
         public ActionResult<ICommandResult> Validate([FromBody] ValidatePasswordCommand command)
         {
             _logger.LogInformation("Starting to validate password");

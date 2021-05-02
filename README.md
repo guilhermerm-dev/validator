@@ -38,6 +38,10 @@ Comandos .NET CLI que podem ser executados no diretório do projeto:
 Para levantar o localhost no projeto Validator.Api, é neccessário entrar no diretorio onde o projeto esteja e executar o comando:
 - **Executar Projeto**: ```dotnet run```
 
+O projeto possui documentação do Swagger, para acessar é necessário acessar o endereço ```/swagger``` 
+
+A aplicação possui um end-point no controller **Validator**, método POST para o endereço ```/Api/Validator/Password/Validate```
+
 Você também pode executar este projeto em qualquer SO, sendo ele Windows, Linux ou MacOs.
 
 Para saber mais sobre como realizar o setup do ambiente .NET visite [Microsoft .NET Download Guide](https://www.microsoft.com/net/download) 
