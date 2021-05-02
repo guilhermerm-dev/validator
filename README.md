@@ -38,3 +38,4 @@ Para saber mais sobre como realizar o setup do ambiente .NET visite [Microsoft .
 - Toda arquitetura baseada em separação de responsabilidade, SOLID e Clean Code
 - Domain Driven Design (Layers)
 - CQRS (Commands)
+- Clean Architecture (UseCase)
