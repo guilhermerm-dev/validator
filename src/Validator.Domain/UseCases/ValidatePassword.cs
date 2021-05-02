@@ -13,7 +13,7 @@ namespace Validator.Domain.UseCases
         }
         public bool Execute(Password password)
         {
-            _logger.LogInformation("Validation password through the Validate Password use case");
+            _logger.LogInformation("Validating password through the Validate Password use case");
             return password.IsValid();
         }
     }

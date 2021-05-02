@@ -23,12 +23,12 @@ namespace Validator.Domain.Handlers
         {
             if (command.IsValid())
             {
-                _logger.LogInformation("ValidatePasswordCommand is valid, processing command through the command handler");
+                _logger.LogInformation("ValidatePasswordCommand is valid - processing command through the command handler");
                 Password password = new Password(command.Password);
                 bool valid = _validatePassword.Execute(password);
                 if (valid)
                 {
-                    _logger.LogInformation("Password is valid, returning confirmation");
+                    _logger.LogInformation("Password is valid");
                     return new CommandResult(valid, "Password is valid!");
                 }
                 else
