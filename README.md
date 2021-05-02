@@ -2,7 +2,9 @@ O que é o Validator?
 =====================
 O Validator é um projeto open-source escrito em .NET core
 
-O objetivo da implementação deste projeto a princípio é a validação de uma senha, sendo ela uma string seguindo os seguintes requisitos:
+O objetivo da implementação deste projeto a princípio é a validação de uma senha, mas pode se estender a outras validaçãos como por exemplo CPF, CNPJ e Etc. 
+
+A senha deve ser uma string e possuir as seguintes caracteristicas:
 
 - Nove ou mais caracteres
 - Ao menos 1 dígito
@@ -11,6 +13,10 @@ O objetivo da implementação deste projeto a princípio é a validação de uma
 - Ao menos 1 caractere especial
 - Seguintes caracteres especiais: !@#$%^&*()-+
 - Não possuir caracteres repetidos dentro do conjunto
+
+###### Raciocinio
+Para que fosse possível realizar a validação da senha, construi uma Regular Expression (REGEX) que valida os padrões mencionadas acima, porém houve um problema.
+A Regex que construi identifica apenas caracteres duplicados que são consecutivos, então como solução realizei a ordenação e apliquei a regex para realizar a validação dos padrões e deu certo \o/
 
 ## Dê uma estrela :star:
 Se você gostou deste projeto ou se o Validator te ajudou, por favor, dê uma estrela ;)
@@ -27,12 +33,14 @@ Comandos .NET CLI que podem ser executados no diretório do projeto:
 - **Buildar projetos**: ```dotnet build```
 - **Executar Testes Unitarios e de Integração**: ```dotnet test```
 
+Para levantar o localhost no projeto Validator.Api, é neccessário entrar no diretorio onde o projeto esteja e executar o comando:
+- **Executar Projeto**: ```dotnet run```
+
 Você também pode executar este projeto em qualquer SO, sendo ele Windows, Linux ou MacOs.
 
 Para saber mais sobre como realizar o setup do ambiente .NET visite [Microsoft .NET Download Guide](https://www.microsoft.com/net/download) 
 
 ## Tecnologias implementadas:
-
 - ASP.NET 5.0 (with .NET Core 5.0)
 - ASP.NET MVC Core 
 - ASP.NET WebApi Core
@@ -40,7 +48,6 @@ Para saber mais sobre como realizar o setup do ambiente .NET visite [Microsoft .
 - Swagger UI
 
 ## Arquitetura:
-
 - Toda arquitetura baseada em separação de responsabilidade, SOLID e Clean Code
 - Domain Driven Design (Layers)
 - CQRS (Commands)
