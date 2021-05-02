@@ -14,7 +14,6 @@ O objetivo da implementação deste projeto a princípio é a validação de uma
 
 ## Dê uma estrela :star:
 Se você gostou deste projeto ou se o Validator te ajudou, por favor, dê uma estrela ;)
-If you liked the project or if Validtor helped you, please give a star ;)
 
 ## Como usar:
 - Você vai precisar da versão mais recente do Visual Studio 2019 ou se preferir, pode ser utilizado o Visual Studio Code.
