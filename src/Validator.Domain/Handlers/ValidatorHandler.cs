@@ -31,9 +31,11 @@ namespace Validator.Domain.Handlers
                     _logger.LogInformation("Password is valid, returning confirmation");
                     return new CommandResult(valid, "Password is valid!");
                 }
-
-                _logger.LogInformation("Password isn't valid");
-                return new CommandResult(valid, "Password isn't valid!");
+                else
+                {
+                    _logger.LogInformation("Password isn't valid");
+                    return new CommandResult(valid, "Password isn't valid!");
+                }
             }
             else
             {
