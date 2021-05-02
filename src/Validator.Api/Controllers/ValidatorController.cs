@@ -7,7 +7,7 @@ using Validator.Shared.Commands;
 namespace Validator.Api
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("Api/[controller]")]
     public class ValidatorController : ControllerBase
     {
         private readonly ILogger _logger;
@@ -18,7 +18,7 @@ namespace Validator.Api
             _logger = logger;
         }
 
-        [HttpPost]
+        [HttpPost("Password/Validate")]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Post))]
         public ActionResult<ICommandResult> Validate([FromBody] ValidatePasswordCommand command)
         {
