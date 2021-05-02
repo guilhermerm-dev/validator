@@ -28,7 +28,7 @@ namespace Validator.Integration.Test.Scenarios
             var response = await _testContext.Client.PostAsync(Uri, httpContent);
             var responseContent = await response.Content.ReadAsStringAsync();
             CommandResult result = JsonConvert.DeserializeObject<CommandResult>(responseContent);
-            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+            Assert.Equal<HttpStatusCode>(HttpStatusCode.OK, response.StatusCode);
             Assert.True(result.Valid);
         }
 
@@ -40,7 +40,7 @@ namespace Validator.Integration.Test.Scenarios
             var response = await _testContext.Client.PostAsync(Uri, httpContent);
             var responseContent = await response.Content.ReadAsStringAsync();
             CommandResult result = JsonConvert.DeserializeObject<CommandResult>(responseContent);
-            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+            Assert.Equal<HttpStatusCode>(HttpStatusCode.OK, response.StatusCode);
             Assert.True(result.Valid);
         }
 
@@ -70,7 +70,7 @@ namespace Validator.Integration.Test.Scenarios
             var response = await _testContext.Client.PostAsync(Uri, httpContent);
             var responseContent = await response.Content.ReadAsStringAsync();
             CommandResult result = JsonConvert.DeserializeObject<CommandResult>(responseContent);
-            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+            Assert.Equal<HttpStatusCode>(HttpStatusCode.OK, response.StatusCode);
             Assert.False(result.Valid);
         }
 
@@ -82,7 +82,7 @@ namespace Validator.Integration.Test.Scenarios
             var response = await _testContext.Client.PostAsync(Uri, httpContent);
             var responseContent = await response.Content.ReadAsStringAsync();
             CommandResult result = JsonConvert.DeserializeObject<CommandResult>(responseContent);
-            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+            Assert.Equal<HttpStatusCode>(HttpStatusCode.OK, response.StatusCode);
             Assert.False(result.Valid);
         }
 
@@ -94,7 +94,7 @@ namespace Validator.Integration.Test.Scenarios
             var response = await _testContext.Client.PostAsync(Uri, httpContent);
             var responseContent = await response.Content.ReadAsStringAsync();
             CommandResult result = JsonConvert.DeserializeObject<CommandResult>(responseContent);
-            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+            Assert.Equal<HttpStatusCode>(HttpStatusCode.OK, response.StatusCode);
             Assert.False(result.Valid);
         }
 
@@ -106,7 +106,7 @@ namespace Validator.Integration.Test.Scenarios
             var response = await _testContext.Client.PostAsync(Uri, httpContent);
             var responseContent = await response.Content.ReadAsStringAsync();
             CommandResult result = JsonConvert.DeserializeObject<CommandResult>(responseContent);
-            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+            Assert.Equal<HttpStatusCode>(HttpStatusCode.OK, response.StatusCode);
             Assert.False(result.Valid);
         }
 
@@ -118,7 +118,7 @@ namespace Validator.Integration.Test.Scenarios
             var response = await _testContext.Client.PostAsync(Uri, httpContent);
             var responseContent = await response.Content.ReadAsStringAsync();
             CommandResult result = JsonConvert.DeserializeObject<CommandResult>(responseContent);
-            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+            Assert.Equal<HttpStatusCode>(HttpStatusCode.OK, response.StatusCode);
             Assert.False(result.Valid);
         }
     }
