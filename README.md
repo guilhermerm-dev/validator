@@ -21,6 +21,12 @@ Se você gostou deste projeto ou se o Validator te ajudou, por favor, dê uma es
 - ***Verifique se você tem instalado a mesma versão do runtime (SDK) da aplicação***
 - Você pode realizar o download das ultimas versões de ferramentas e SDK através do site https://dot.net/core.
 
+Comandos .NET CLI que podem ser executados no diretório do projeto:
+- **Limpar projetos**: ´´´dotnet clean´´´
+- **Restaurar pacotes Nuget**: ´´´dotnet clean´´´
+- **Buildar projetos**: ´´´dotnet build´´´
+- **Executar Testes Unitarios e de Integração**: ´´´dotnet test´´´
+
 Você também pode executar este projeto em qualquer SO, sendo ele Windows, Linux ou MacOs.
 
 Para saber mais sobre como realizar o setup do ambiente .NET visite [Microsoft .NET Download Guide](https://www.microsoft.com/net/download) 
