@@ -1,8 +1,8 @@
-using Validator.Domain.UseCases;
-using Validator.Domain.ValueObjects;
+using Microsoft.Extensions.Logging;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using Microsoft.Extensions.Logging;
+using Validator.Domain.UseCases;
+using Validator.Domain.ValueObjects;
 
 namespace Validator.Tests.UseCases
 {
